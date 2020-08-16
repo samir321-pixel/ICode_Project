@@ -1,0 +1,7 @@
+{
+  "params": {
+    "local_server": "True",
+    "local_uri": "mysql://root:sam123@localhost/myblog",
+    "upload_location": "C:\\Users\\Criminal\\Videos"
+  }
+}

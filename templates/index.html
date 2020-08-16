@@ -1,0 +1,294 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- END header -->
+
+    <div class="top-shadow"></div>
+    <div class="slider-item" style="background-image: url('{{ url_for('static', filename='images/main.png') }}');">
+        <div class="container">
+            <div class="row slider-text align-items-center justify-content-center">
+                <div class="col-lg-9 text-center col-sm-12 element-animate">
+
+
+                    <b><h1 class="mb-7" style="font-size:60px"><span>Eat<br>|<br>Sleep <br>|<br>Code <br>|<br> </span>
+                    </h1>
+                        <h1 class="mb-9" style="font-size:64px">Repeat<br>&#8635;</h1></b>
+
+                    <!--
+                    <div class="btn-play-wrap mx-auto"><p class="mb-4"><a href="https://www.youtube.com/watch?v=_VnYSoMI-9Q" data-fancybox data-ratio="2" class="btn-play"><span class="ion ion-ios-play"></span></a></p></div>
+                    <span>Watch Video</span>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-lg-4 order-lg-2">
+                    <div class="scaling-image h-100">
+                        <div class="frame  h-100">
+                            <div class="feature-img-bg   h-100"
+                                 style="background-image: url('{{ url_for('static', filename='images/wp2.jpg') }}');"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+
+                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojMDBDN0ZGOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMDA5M0M0OyIgZD0iTTUxMiwyNTZjMC0wLjAzNy0wLjAwMS0wLjA3My0wLjAwMS0wLjExTDM5Mi4xMjcsMTM2LjAxOEwxMDAuNSwzNzUuOTgybDEzNS4yMTksMTM1LjIxOQ0KCUMyNDIuNDExLDUxMS43MjYsMjQ5LjE3Myw1MTIsMjU2LDUxMkMzOTcuMzg1LDUxMiw1MTIsMzk3LjM4NSw1MTIsMjU2eiIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzlBQkFEQjsiIHBvaW50cz0iMzkyLjEyNywxMzYuMDE4IDI1NiwxMzYuMDE4IDI0My44NDIsMzQ5LjM5NCAzOTIuMTI3LDMzNy4yMzYgIi8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojRDFFOEZGOyIgcG9pbnRzPSIxMTkuODczLDEzNi4wMTggMTE5Ljg3MywzMzcuMjM2IDI1NiwzNDkuMzk0IDI1NiwxMzYuMDE4IAkiLz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojRDFFOEZGOyIgcG9pbnRzPSI0MTEuNSwzMzcuMjM2IDI1NiwzMzcuMjM2IDI0My44NDIsMzU2LjYwOSAyNTYsMzc1Ljk4MiA0MTEuNSwzNzUuOTgyIAkiLz4NCjwvZz4NCjxyZWN0IHg9IjEwMC41IiB5PSIzMzcuMjQiIHN0eWxlPSJmaWxsOiNGNUY1RkY7IiB3aWR0aD0iMTU1LjUiIGhlaWdodD0iMzguNzQ3Ii8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojMjk0QjZFOyIgcG9pbnRzPSIzNzMuOTA0LDE1NC4yNCAyNTYsMTU0LjI0IDI0My44NDIsMjM2LjYyNyAyNTYsMzE5LjAxMyAzNzMuOTA0LDMxOS4wMTMgIi8+DQo8cmVjdCB4PSIxMzguMSIgeT0iMTU0LjI0IiBzdHlsZT0iZmlsbDojNjI4M0EzOyIgd2lkdGg9IjExNy45IiBoZWlnaHQ9IjE2NC43NyIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0Y1RjVGRjsiIHBvaW50cz0iMjA5LjEyNCwyODQuOTAxIDE2MC44NSwyMzYuNjI3IDIwOS4xMjQsMTg4LjM1MyAyMjIuMDA5LDIwMS4yMzggMTg2LjYyLDIzNi42MjcgDQoJMjIyLjAwOSwyNzIuMDE2ICIvPg0KPGc+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0QxRThGRjsiIHBvaW50cz0iMzAyLjg3NiwyODQuOTAxIDI4OS45OTEsMjcyLjAxNiAzMjUuMzgsMjM2LjYyNyAyODkuOTkxLDIwMS4yMzggMzAyLjg3NiwxODguMzUzIA0KCQkzNTEuMTUsMjM2LjYyNyAJIi8+DQoJDQoJCTxyZWN0IHg9IjI0Ni44ODgiIHk9IjE3OS4wNTIiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjk4MDggLTAuMTk1MSAwLjE5NTEgLTAuOTgwOCA0NjAuOTEyIDUxOC42ODI2KSIgc3R5bGU9ImZpbGw6I0QxRThGRjsiIHdpZHRoPSIxOC4yMjMiIGhlaWdodD0iMTE1LjE4MiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+                                 width="70" height="70">
+                            <h3>What is Code?</h3>
+                            <p> Code is a term used to describe text that is written using the protocol of a particular
+                                language by a computer programmer. Examples of programming languages include C, C#, C++,
+                                Java, Perl, and PHP. Code can also be used in a less formal fashion to refer to text
+                                written for markup or styling languages, like HTML and CSS. For example, you may see
+                                people make reference to code in numerous languages, such as "C code," "PHP code," "HTML
+                                code," or "CSS code." A computer programmer, sometimes called a software developer, a
+                                programmer or more recently a coder (especially in more informal contexts), is a person
+                                who creates computer software. The term computer programmer can refer to a specialist in
+                                one area of computers, or to a generalist who writes code for many kinds of
+                                software.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+
+                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojMDBDN0ZGOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMDA5M0M0OyIgZD0iTTUxMS4zODcsMjczLjU5MkwzNzguMzUsMTQwLjU1NWwtMTUuNzU4LDExLjg1MkwzMzEuNzQsMTIxLjRoLTQ0LjY5Ng0KCWMtMC4xMDctMC4xMDQtMTAuMzMyLTEwLjMwMi0xMC4zMzItMTAuMzAyTDEzMy42NSw0MDkuNzU0bDEwMS4zODcsMTAxLjM4N0MyNDEuOTUxLDUxMS43MDIsMjQ4Ljk0LDUxMiwyNTYsNTEyDQoJQzM5MS40Nyw1MTIsNTAyLjM0Niw0MDYuNzY5LDUxMS4zODcsMjczLjU5MnoiLz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRkVEOTQ7IiBwb2ludHM9IjM3OC4zNSwxNDAuNTU1IDI1NiwxNDAuNTU1IDI0My45NzgsMjc1LjE1NSAyNTYsNDA5Ljc1NCAzNzguMzUsNDA5Ljc1NCAiLz4NCjxyZWN0IHg9IjEzMy42NSIgeT0iMTQwLjU2IiBzdHlsZT0iZmlsbDojRkZGOEQ0OyIgd2lkdGg9IjEyMi4zNSIgaGVpZ2h0PSIyNjkuMiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzlBQkFEQjsiIGQ9Ik0zMzEuNzQsMTIxLjRoLTQ4LjY0OWMtMy45NDUtMTEuMTU4LTE0LjU4Mi0xOS4xNTUtMjcuMDkxLTE5LjE1NWwtMTIuMDIyLDMyLjIzNEwyNTYsMTU5LjcxaDc1Ljc0DQoJVjEyMS40eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0QxRThGRjsiIGQ9Ik0yMjguOTA5LDEyMS40SDE4MC4yNnYzOC4zMUgyNTZ2LTU3LjQ2NUMyNDMuNDkxLDEwMi4yNDYsMjMyLjg1NCwxMTAuMjQyLDIyOC45MDksMTIxLjR6Ii8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojNjI4M0EzOyIgcG9pbnRzPSIyMTEuOTk1LDMyMC40NjEgMTY2LjY4OCwyNzUuMTU1IDIxMS45OTUsMjI5Ljg0OCAyMjQuNzM1LDI0Mi41ODkgMTkyLjE2OSwyNzUuMTU1IA0KCTIyNC43MzUsMzA3LjcyMSAiLz4NCjxnPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMyOTRCNkU7IiBwb2ludHM9IjMwMC4wMDUsMzIwLjQ2MSAyODcuMjY1LDMwNy43MjEgMzE5LjgzMSwyNzUuMTU1IDI4Ny4yNjUsMjQyLjU4OSAzMDAuMDA1LDIyOS44NDggDQoJCTM0NS4zMTIsMjc1LjE1NSAJIi8+DQoJDQoJCTxyZWN0IHg9IjI0Ni45OTIiIHk9IjIyMS41NTciIHRyYW5zZm9ybT0ibWF0cml4KC0wLjk4MDggLTAuMTk1MSAwLjE5NTEgLTAuOTgwOCA0NTMuNDAxNCA1OTQuOTgyOSkiIHN0eWxlPSJmaWxsOiMyOTRCNkU7IiB3aWR0aD0iMTguMDIiIGhlaWdodD0iMTA3LjIxMiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+                                 width="70" height="70"/>
+                            <h3>Why Code?</h3>
+                            <p>Coding is a basic literacy in the digital age, and it is important for kids to understand
+                                and be able to work with and understand the technology around them. Having children
+                                learn coding at a young age prepares them for the future. Coding helps children with
+                                communication, creativity, math,writing, and confidence. Just like architecture, which
+                                is an art used by people daily and affects their everyday life, so is code. You can
+                                create something and people interact with, use, touch and work with. That is an amazing
+                                feeling.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3">
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMV8xXyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTkgNTVoNHY2aC00eiIgZmlsbD0iIzUwYjZjZiIvPjxwYXRoIGQ9Im0xMyA0OWg0djEyaC00eiIgZmlsbD0iIzNjYWRjOSIvPjxwYXRoIGQ9Im0xNyA1Mmg0djloLTR6IiBmaWxsPSIjNTBiNmNmIi8+PHBhdGggZD0ibTM3IDUwaDR2MTFoLTR6IiBmaWxsPSIjM2NhZGM5Ii8+PHBhdGggZD0ibTIxIDQ0aDR2MTdoLTR6IiBmaWxsPSIjM2NhZGM5Ii8+PHBhdGggZD0ibTMzIDQ0aDR2MTdoLTR6IiBmaWxsPSIjNTBiNmNmIi8+PHBhdGggZD0ibTI1IDQ2aDR2MTVoLTR6IiBmaWxsPSIjNTBiNmNmIi8+PHBhdGggZD0ibTI5IDM1aDR2MjZoLTR6IiBmaWxsPSIjM2NhZGM5Ii8+PHBhdGggZD0ibTQ0IDQyaDE1djRoLTE1eiIgZmlsbD0iI2YwOWQzYSIvPjxwYXRoIGQ9Im01NyAyNWMwLS41NS4yMi0xLjA1LjU5LTEuNDEuMzYtLjM3Ljg2LS41OSAxLjQxLS41OSAxLjEgMCAyIC45IDIgMnYxNWwtMiAyaC0xNWwtMy0zdi02bDQtNXYtMTNjMC0xLjEuOS0yIDItMiAuNTUgMCAxLjA1LjIyIDEuNDEuNTkuMzcuMzYuNTkuODYuNTkgMS40MXYxMGMwLTEuMS45LTIgMi0yIC41NSAwIDEuMDUuMjIgMS40MS41OS4zNy4zNi41OS44Ni41OSAxLjQxIDAtMS4xLjktMiAyLTIgLjU1IDAgMS4wNS4yMiAxLjQxLjU5LjM3LjM2LjU5Ljg2LjU5IDEuNDF6IiBmaWxsPSIjZjVhOTQ3Ii8+PHBhdGggZD0ibTQxLjgzNjU1IDM5LjgzNjU1IDIuMTYzNDUgMi4xNjM0NWgxNWwyLTJ2LTguMDAwMDZjLTMuNzg3NDEgNC4xMzc0NS0xMC44MjU5MyA3LjEyNjU5LTE5LjE2MzQ1IDcuODM2NjF6IiBmaWxsPSIjZjA5ZDNhIi8+PHBhdGggZD0ibTQuOTYxOTEgNTEuMjc0NDEtMS45MjM4Mi0uNTQ4ODIgNi41NjQ0NS0yMi45NzI2NiA4LjA2MzQ4IDExLjA4NjkxIDguMTQ4NDMtMjQuNDQ2MjkgNS4zMDk1NyAxMC42MTgxNyAxNS4wNDM5NS0yMi41NjY0MSAxLjY2NDA2IDEuMTA5MzgtMTYuOTU2MDUgMjUuNDMzNTktNC42OTA0My05LjM4MTgzLTcuODUxNTcgMjMuNTUzNzEtNy45MzY1Mi0xMC45MTMwOXoiIGZpbGw9IiNlMzRlNGIiLz48cGF0aCBkPSJtNDggMTBoLTJ2LTUuNjczODNsLTUuNzI1NTkgMS42MzU3NC0uNTQ4ODItMS45MjM4MiA4LjI3NDQxLTIuMzY0MjZ6IiBmaWxsPSIjZTM0ZTRiIi8+PHBhdGggZD0ibTUxIDM5LjQxNDA2LTIuNzA3MDMtMi43MDcwMyAxLjQxNDA2LTEuNDE0MDYgMS4yOTI5NyAxLjI5Mjk3IDQuMjkyOTctNC4yOTI5NyAxLjQxNDA2IDEuNDE0MDZ6IiBmaWxsPSIjMjIzYjVhIi8+PHBhdGggZD0ibTYgNjBoMzh2MmgtMzh6IiBmaWxsPSIjMjIzYjVhIi8+PGcgZmlsbD0iI2YwOWQzYSI+PHBhdGggZD0ibTQ1IDI4LTEgMS4yNXYzLjc1YzAgLjU1MjI4LjQ0NzcyIDEgMSAxIC41NTIyOCAwIDEtLjQ0NzcyIDEtMXYtNXoiLz48cGF0aCBkPSJtNDkgMzFjLS41NTIyOCAwLTEtLjQ0NzcxLTEtMXYtNGMwLS41NTIyOC40NDc3Mi0xIDEtMSAuNTUyMjggMCAxIC40NDc3MSAxIDF2NGMwIC41NTIyOS0uNDQ3NzIgMS0xIDF6Ii8+PHBhdGggZD0ibTUzIDMxYy0uNTUyMjggMC0xLS40NDc3MS0xLTF2LTRjMC0uNTUyMjguNDQ3NzItMSAxLTEgLjU1MjI4IDAgMSAuNDQ3NzEgMSAxdjRjMCAuNTUyMjktLjQ0NzcyIDEtMSAxeiIvPjxwYXRoIGQ9Im01NyAzMWMtLjU1MjI4IDAtMS0uNDQ3NzEtMS0xdi00YzAtLjU1MjI4LjQ0NzcyLTEgMS0xIC41NTIyOCAwIDEgLjQ0NzcxIDEgMXY0YzAgLjU1MjI5LS40NDc3MiAxLTEgMXoiLz48L2c+PC9zdmc+"
+                                 width="70" height="70"/>
+
+                            <h3>Future Code</h3>
+                            <p>
+                                Computer programming and coding is a skill that is vastly changing the career field, but
+                                it is a skill that many people feel intimidated to learn.
+                                Getting into development is harder than ever — it’s not as simple as peeking under the
+                                hood anymore. IT is moving towards agility, a discipline that requires enterprises to
+                                adapt to new technology and innovations quickly. DevOps is a way of IT that fills the
+                                communication gap between developers and operational teams.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-1 d-md-flex">
+                        <div class="align-self-center">
+                            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSItMjYgMCA1MTIgNTEyLjAwMSIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xMzAuNDk2MDk0IDUwNC40OTYwOTRoLTk3LjQ3MjY1NnYtMzQuMzgyODEzYzAtMTAuMDAzOTA2IDguMTA5Mzc0LTE4LjExMzI4MSAxOC4xMTMyODEtMTguMTEzMjgxaDYxLjI0NjA5M2MxMC4wMDM5MDcgMCAxOC4xMTMyODIgOC4xMDkzNzUgMTguMTEzMjgyIDE4LjExMzI4MXptMCAwIiBmaWxsPSIjYTdjN2QzIi8+PHBhdGggZD0ibTIyNy45NzI2NTYgNTA0LjQ5NjA5NGgtOTcuNDc2NTYydi03OS4zNDc2NTZjMC0xMC4wMDM5MDcgOC4xMDkzNzUtMTguMTEzMjgyIDE4LjExMzI4MS0xOC4xMTMyODJoNjEuMjVjMTAuMDAzOTA2IDAgMTguMTEzMjgxIDguMTA5Mzc1IDE4LjExMzI4MSAxOC4xMTMyODJ6bTAgMCIgZmlsbD0iIzg5YjRjOSIvPjxwYXRoIGQ9Im0zMjUuNDQ5MjE5IDUwNC40OTYwOTRoLTk3LjQ3NjU2M3YtMTI3LjY1MjM0NGMwLTEwLjAwMzkwNiA4LjEwOTM3NS0xOC4xMTMyODEgMTguMTEzMjgyLTE4LjExMzI4MWg2MS4yNWMxMCAwIDE4LjExMzI4MSA4LjEwOTM3NSAxOC4xMTMyODEgMTguMTEzMjgxem0wIDAiIGZpbGw9IiM2Yzk2YjMiLz48cGF0aCBkPSJtNDIyLjkyMTg3NSA1MDQuNDk2MDk0aC05Ny40NzI2NTZ2LTIwMC45MjE4NzVjMC0xMC4wMDM5MDcgOC4xMDkzNzUtMTguMTEzMjgxIDE4LjExMzI4MS0xOC4xMTMyODFoNjEuMjQ2MDk0YzEwLjAwMzkwNiAwIDE4LjExMzI4MSA4LjEwOTM3NCAxOC4xMTMyODEgMTguMTEzMjgxem0wIDAiIGZpbGw9IiM2MThhYWEiLz48cGF0aCBkPSJtMzUxLjkwNjI1IDgwLjIzMDQ2OWg5OC4wNDI5NjljMy4wMzUxNTYgMCA0LjQ1NzAzMS0zLjc2MTcxOSAyLjE3NTc4MS01Ljc2OTUzMWwtMjUuNDY4NzUtMjIuNDIxODc2Yy0xLjQ4ODI4MS0xLjMxMjUtMS40ODgyODEtMy42MzI4MTIgMC00Ljk0NTMxMmwyNS40Njg3NS0yMi40MjU3ODFjMi4yODEyNS0yLjAwNzgxMy44NTkzNzUtNS43NjU2MjUtMi4xNzU3ODEtNS43NjU2MjVoLTk4LjA0Mjk2OXptMCAwIiBmaWxsPSIjZmRiNjU5Ii8+PHBhdGggZD0ibTM1OS43MTQ4NDQgMTA4LjkyOTY4OC0xMDYuMjA3MDMyIDU3LjY3NTc4MWMtOS40NzY1NjIgNS4xNDQ1MzEtMTIuMDY2NDA2IDE0LjE5MTQwNi0xNS4zNzUgMjUuODQzNzVsLTIxLjEyMTA5MyA3NC42ODM1OTMgNTEuNzU3ODEyLTIxLjIwNzAzMSAyMC4wODk4NDQtNjAuNzI2NTYyIDUzLjQ0OTIxOS0zMi40NzI2NTdjMTQuOTMzNTk0LTkuMDc0MjE4IDIyLjAzOTA2Mi0yNi45NDkyMTggMTcuNDA2MjUtNDMuNzk2ODc0em0wIDAiIGZpbGw9IiM4M2Q5ZmYiLz48cGF0aCBkPSJtMzU5LjcxNDg0NCAxMDguOTI5Njg4LTEyLjI1MzkwNiA2LjY1MjM0M2MtMi4wNjY0MDcgMTAuNTQ2ODc1LTguNDM3NSAyMC4wNzAzMTMtMTguMDc0MjE5IDI1LjkyNTc4MWwtNDguNjk5MjE5IDI5LjU4NTkzOGMtMy4wNjY0MDYgMS44NjMyODEtNS4zNjcxODggNC43NTc4MTItNi40OTYwOTQgOC4xNjQwNjJsLTYuOTUzMTI1IDIxLjAyMzQzOGMtNy4yMzA0NjkgMjEuODUxNTYyLTIzLjY0ODQzNyAzOS40NDkyMTktNDQuOTQ1MzEyIDQ4LjE3NTc4MWwtNS4yODEyNSAxOC42Nzk2ODggNTEuNzU3ODEyLTIxLjIxMDkzOCAyMC4wODk4NDQtNjAuNzIyNjU2IDUzLjQ0OTIxOS0zMi40NzI2NTZjMTQuOTMzNTk0LTkuMDc4MTI1IDIyLjAzOTA2Mi0yNi45NTMxMjUgMTcuNDA2MjUtNDMuODAwNzgxem0wIDAiIGZpbGw9IiM1ZmM5ZWQiLz48cGF0aCBkPSJtMjY4Ljc2OTUzMSAyNDUuOTI1NzgxIDMwLjU4OTg0NCAzNi4xNDQ1MzFjNS4wNjY0MDYgNi43MTA5MzggOS40NzY1NjMgMTEuNDI5Njg4IDguNTYyNSAxOC44MTI1bC03LjE1NjI1IDU3LjgxNjQwN2gtMTguNjY0MDYzbC00Ljg3ODkwNi00OS43MDcwMzFjLS4yOTY4NzUtMy4wMDM5MDctMi4yMDMxMjUtNS42MTMyODItNC45NzY1NjItNi44MDg1OTRsLTU1LjIzNDM3NS0zNS4wNDY4NzV6bTAgMCIgZmlsbD0iIzM4NjI3YyIvPjxwYXRoIGQ9Im0yMTcuMDExNzE5IDI2Ny4xMzY3MTktMi45ODQzNzUgNTQuODAwNzgxYy0uMTkxNDA2IDQuNTQyOTY5LjQ0NTMxMiA3LjYxNzE4OC0xLjMzMjAzMiAxMC45OTYwOTRsLTM1LjIyMjY1NiA3NC4xMDE1NjJoMTkuODAwNzgybDUyLjk1NzAzMS03MC4zNDM3NWMzLjA5NzY1Ni0zLjYwNTQ2OCAzLjQ1MzEyNS04LjQ5NjA5NCA0LjQ5NjA5My0xM2wxNC4wNDI5NjktNzcuNzY1NjI1em0wIDAiIGZpbGw9IiM0Zjc2OTMiLz48cGF0aCBkPSJtMjY0Ljk3MjY1NiAxMjAuNzU3ODEyIDguNjg3NSAxNi45NTMxMjZjNC4wODIwMzIgNy45Njg3NS45Mjk2ODggMTcuNzM4MjgxLTcuMDM5MDYyIDIxLjgyMDMxMmwtNi43MTQ4NDQgMy40Mzc1Yy03Ljk2ODc1IDQuMDgyMDMxLTE3LjczNDM3NS45Mjk2ODgtMjEuODE2NDA2LTcuMDM5MDYybC04LjY4NzUtMTYuOTUzMTI2Yy00LjA4MjAzMi03Ljk2ODc1LS45Mjk2ODgtMTcuNzM4MjgxIDcuMDM5MDYyLTIxLjgyMDMxMmw2LjcxNDg0NC0zLjQzNzVjNy45Njg3NS00LjA4MjAzMSAxNy43MzQzNzUtLjkyOTY4OCAyMS44MTY0MDYgNy4wMzkwNjJ6bTAgMCIgZmlsbD0iI2ZlY2JhYSIvPjxwYXRoIGQ9Im00NTcuMDg1OTM4IDY4LjgyODEyNS0yMS44Nzg5MDctMTkuMjY1NjI1IDIxLjg3ODkwNy0xOS4yNjE3MTljMy40MDIzNDMtMyA0LjU2NjQwNi03LjY3NTc4MSAyLjk2ODc1LTExLjkxNzk2OS0xLjYwNTQ2OS00LjI0NjA5My01LjU3MDMxMy02Ljk4ODI4MS0xMC4xMDU0NjktNi45ODgyODFoLTkwLjUzOTA2M3YtMy44OTA2MjVjMC00LjE0NDUzMS0zLjM1OTM3NS03LjUwMzkwNi03LjUwMzkwNi03LjUwMzkwNnMtNy41MDM5MDYgMy4zNTkzNzUtNy41MDM5MDYgNy41MDM5MDZ2MTAxLjIwMzEyNWwtNjEuNjI4OTA2IDMzLjQ2NDg0NGMtLjMzOTg0NC0yLjcxMDkzNy0xLjE1MjM0NC01LjM3NS0yLjQzNzUtNy44ODI4MTNsLTguNjgzNTk0LTE2Ljk1MzEyNGMtNS45NjA5MzgtMTEuNjQwNjI2LTIwLjI4MTI1LTE2LjI1MzkwNy0zMS45MTQwNjMtMTAuMjk2ODc2bC02LjcxNDg0MyAzLjQzNzVjLTUuNjQwNjI2IDIuODkwNjI2LTkuODE2NDA3IDcuNzk2ODc2LTExLjc2MTcxOSAxMy44MjgxMjYtMS45NDUzMTMgNi4wMjczNDMtMS40MjU3ODEgMTIuNDUzMTI0IDEuNDY0ODQzIDE4LjA4OTg0M2w4LjY4MzU5NCAxNi45NTcwMzFjMi4wMjczNDQgMy45NTcwMzIgNS4wMjM0MzggNy4wODk4NDQgOC41NDY4NzUgOS4yODUxNTctNC42MDkzNzUgNi4yMDcwMzEtNi43OTY4NzUgMTMuODM5ODQzLTkuMDQ2ODc1IDIxLjc2OTUzMWwtMS42MTcxODcgNS43MjY1NjJjLTEuMTI4OTA3IDMuOTg4MjgyIDEuMTkxNDA2IDguMTM2NzE5IDUuMTc5Njg3IDkuMjYxNzE5LjY3OTY4OC4xOTUzMTMgMS4zNjcxODguMjg1MTU3IDIuMDQyOTY5LjI4NTE1NyAzLjI3MzQzNyAwIDYuMjgxMjUtMi4xNTYyNSA3LjIxODc1LTUuNDY0ODQ0bDEuNjE3MTg3LTUuNzE0ODQ0YzMuMjg5MDYzLTExLjU5NzY1NiA1LjMwODU5NC0xNy44MDg1OTQgMTEuNzM4MjgyLTIxLjMwMDc4MWwxMS41MjczNDQtNi4yNjE3MTkgMS40MjE4NzQtLjcyNjU2MmMuNDcyNjU3LS4yNDIxODguOTE0MDYzLS41MTU2MjYgMS4zNjMyODItLjc4NTE1N2w4Mi4xNTYyNS00NC42MTMyODFjLS41MTk1MzIgMTAuMjY5NTMxLTYuMDQ2ODc1IDE5Ljk3MjY1Ni0xNS4xNDg0MzggMjUuNWwtNTMuNDI1NzgxIDMyLjQ2MDkzOGMtLjA2MjUuMDM1MTU2LS4xMjUuMDcwMzEyLS4xODM1OTQuMTA5Mzc0bC0xNi42Mjg5MDYgMTAuMTAxNTYzYy0zLjUzOTA2MyAyLjE1MjM0NC00LjY2Nzk2OSA2Ljc2OTUzMS0yLjUxNTYyNSAxMC4zMTI1IDIuMDI3MzQ0IDMuMzM5ODQ0IDYuMjQ2MDk0IDQuNTI3MzQ0IDkuNjg3NSAyLjg1MTU2M2wtMTIuNjE3MTg4IDM4LjE0MDYyNC05LjIyMjY1NiAzLjc4MTI1LTI1LjA3ODEyNSAxMC4yNzczNDQgNy4yMjY1NjMtMjUuNTQ2ODc1YzEuMTI1LTMuOTg4MjgxLTEuMTkxNDA2LTguMTM2NzE5LTUuMTc5Njg4LTkuMjY1NjI1LTMuOTkyMTg3LTEuMTMyODEyLTguMTM2NzE4IDEuMTkxNDA2LTkuMjY1NjI1IDUuMTc5Njg4bC0xMS40MTc5NjkgNDAuMzc4OTA2Yy0uMTQ4NDM3LjUxOTUzMS0uMjQ2MDkzIDEuMDg5ODQ0LS4yNjk1MzEgMS42MzI4MTJsLTIuOTg4MjgxIDU0Ljg5MDYyNmMtLjA4OTg0NCAyLjA5Mzc1LjM1NTQ2OSA2LjA1MDc4MS0uNjEzMjgxIDguMDkzNzVsLTMzLjE4NzUgNjkuODIwMzEyaC0yNC4xMTcxODhjLTE0LjEyODkwNiAwLTI1LjYyMTA5MyAxMS40OTIxODgtMjUuNjIxMDkzIDI1LjYxNzE4OHYyMS42NjAxNTZjLTMuMjM0Mzc2LTEuNDgwNDY5LTYuODI0MjE5LTIuMzA4NTk0LTEwLjYwOTM3Ni0yLjMwODU5NGgtNjEuMjQ2MDkzYy0xNC4xMjUgMC0yNS42MTcxODggMTEuNDg4MjgxLTI1LjYxNzE4OCAyNS42MTcxODh2MjYuODc1aC0xOC4wMTU2MjVjLTQuMTQ0NTMxIDAtNy41MDM5MDYgMy4zNTkzNzQtNy41MDM5MDYgNy41MDM5MDYgMCA0LjE0NDUzMSAzLjM1OTM3NSA3LjUwMzkwNiA3LjUwMzkwNiA3LjUwMzkwNmg0NDIuNDM3NWM0LjE0NDUzMiAwIDcuNTAzOTA2LTMuMzU5Mzc1IDcuNTAzOTA2LTcuNTAzOTA2IDAtNC4xNDQ1MzItMy4zNTkzNzQtNy41MDM5MDYtNy41MDM5MDYtNy41MDM5MDZoLTE5LjUxNTYyNXYtMTkzLjQxNzk2OWMwLTE0LjEyNS0xMS40OTIxODctMjUuNjE3MTg4LTI1LjYxNzE4Ny0yNS42MTcxODhoLTQ1LjM5ODQzOHYtMTMwLjkxMDE1NmM4LjMyMDMxMy0xMS4yNzczNDQgMTEuNDAyMzQ0LTI2LjA1ODU5NCA3LjUzOTA2My00MC4xMDU0NjktLjYwNTQ2OS0yLjIwNzAzMS0yLjE4NzUtNC4wMTk1MzEtNC4yOTY4NzUtNC45MTQwNjItMS4wMzUxNTYtLjQ0MTQwNi0yLjE0NDUzMi0uNjM2NzE5LTMuMjQyMTg4LS41OTM3NXYtMTMuNjk5MjE5aDkwLjUzNTE1NmM0LjUzOTA2MyAwIDguNTAzOTA3LTIuNzQyMTg3IDEwLjEwNTQ2OS02Ljk4NDM3NSAxLjYwMTU2My00LjI0MjE4OC40Mzc1LTguOTIxODc1LTIuOTY0ODQzLTExLjkyMTg3NXptLTIyMS41MzkwNjMgNjAuMDg1OTM3Yy43MTQ4NDQtMi4yMTQ4NDMgMi4yNDYwOTQtNC4wMTk1MzEgNC4zMTY0MDYtNS4wNzgxMjRsNi43MTQ4NDQtMy40Mzc1YzEuMjY1NjI1LS42NDg0MzggMi42MTcxODctLjk1NzAzMiAzLjk1MzEyNS0uOTU3MDMyIDMuMTY0MDYyIDAgNi4yMjI2NTYgMS43MzA0NjkgNy43NjE3MTkgNC43MzQzNzVsOC42ODc1IDE2Ljk1NzAzMWMyLjAyNzM0MyAzLjk2MDkzOC43MTQ4NDMgOC43NjE3MTktMi44OTA2MjUgMTEuMTg3NWwtMi40NDUzMTMgMS4zMjQyMTktNS4xNjAxNTYgMi42NDQ1MzFjLTQuMjY5NTMxIDIuMTg3NS05LjUyNzM0NC40OTIxODgtMTEuNzE0ODQ0LTMuNzgxMjVsLTguNjg3NS0xNi45NTMxMjRjLTEuMDU4NTkzLTIuMDcwMzEzLTEuMjUtNC40Mjk2ODgtLjUzNTE1Ni02LjY0MDYyNnptLTE1LjA3ODEyNSAyNzIuOTI1NzgyYy0yLjU1MDc4MS0xLjE2NDA2My01LjMyNDIxOS0xLjkyNTc4Mi04LjIzODI4MS0yLjE5NTMxM2w4LjIzODI4MS0xMC45NDE0MDZ6bTM1LjYyODkwNi02MC40NjQ4NDRjMy42MDkzNzUtNC4zMjQyMTkgNC42MDU0NjktOS4zNzUgNS40MTAxNTYtMTMuNDQ1MzEyLjIwMzEyNi0uOTY4NzUgMy45MDYyNS0yMS4xOTUzMTMgMy45MDYyNS0yMS4xOTUzMTNzMy41MDM5MDcgMi4xODM1OTQgMy44NzEwOTQgMi4zMzk4NDRjLjI1MzkwNi4xMTMyODEuNDMzNTk0LjM2MzI4MS40NjA5MzguNjU2MjVsNC4wODIwMzEgNDEuNDk2MDkzaC0yNS4xNDg0Mzd6bTQ0LjM3NS00MS40MTc5NjktNi4zMzU5MzcgNTEuMjM0Mzc1aC01LjIzMDQ2OWwtNC4yMjI2NTYtNDIuOTI5Njg3Yy0uNTM5MDYzLTUuNS0zLjkwNjI1LTEwLjMwMDc4MS04LjgzOTg0NC0xMi42ODc1bC03LjU0Njg3NS00Ljc4NTE1NyA1LjAyNzM0NC0yNy44NjMyODFzMjEuMTc5Njg3IDI1LjE2MDE1NyAyMS42NzE4NzUgMjUuODAwNzgxYzQuMzgyODEyIDUuNjk5MjE5IDUuODgyODEyIDcuOTgwNDY5IDUuNDc2NTYyIDExLjIzMDQ2OXptLTgxLjA1NDY4NyAzNi4zMTY0MDdjMS41MTU2MjUtNC41NjI1IDIuMjE4NzUtOS4yMDcwMzIgMi4xMDE1NjItMTMuOTI5Njg4bDIuNzI2NTYzLTUwLjA2MjUgMzQuNzA3MDMxLTE0LjIyMjY1Ni02LjMwODU5NCAzNC45NDUzMTJjLS4wMTk1MzEuMDkzNzUtLjAzOTA2Mi4xOTE0MDYtLjA1MDc4MS4yODUxNTZsLTUuMjE4NzUgMjguODk0NTMyYy0uNjc5Njg4IDIuOTkyMTg3LTEuMjczNDM4IDcuNTMxMjUtMy4xNDA2MjUgOS45OTYwOTRsLTUwLjcwNzAzMSA2Ny4zNTE1NjJoLTQuMTc5Njg4em0tMTc4Ljg5MDYyNSAxMzMuODM5ODQzYzAtNS44NDc2NTYgNC43NTc4MTItMTAuNjA1NDY5IDEwLjYwOTM3NS0xMC42MDU0NjloNjEuMjQ2MDkzYzUuODUxNTYzIDAgMTAuNjEzMjgyIDQuNzU3ODEzIDEwLjYxMzI4MiAxMC42MDU0Njl2MjYuODc4OTA3aC04Mi40Njg3NXptOTcuNDcyNjU2IDB2LTQ0Ljk2NDg0M2MwLTUuODUxNTYzIDQuNzYxNzE5LTEwLjYwOTM3NiAxMC42MTMyODEtMTAuNjA5Mzc2aDYxLjI0NjA5NGM1Ljg1MTU2MyAwIDEwLjYwOTM3NSA0Ljc1NzgxMyAxMC42MDkzNzUgMTAuNjA5Mzc2djcxLjg0Mzc1aC04Mi40NjQ4NDR2LTI2Ljg3ODkwN3ptMjc3LjQxNzk2OS0xNjYuNTM5MDYydjE5My40MTc5NjloLTgyLjQ2NDg0NHYtNDQuOTkyMTg4YzAtNC4xNDQ1MzEtMy4zNTkzNzUtNy41MDM5MDYtNy41MDM5MDYtNy41MDM5MDYtNC4xNDg0MzggMC03LjUwNzgxMyAzLjM1OTM3NS03LjUwNzgxMyA3LjUwMzkwNnY0NC45OTIxODhoLTgyLjQ2NDg0NHYtMTIwLjE1MjM0NGMwLTUuODQ3NjU2IDQuNzU3ODEzLTEwLjYwNTQ2OSAxMC42MDkzNzYtMTAuNjA1NDY5aDYxLjI0NjA5M2M1Ljg1MTU2MyAwIDEwLjYwOTM3NSA0Ljc1NzgxMyAxMC42MDkzNzUgMTAuNjA1NDY5djM3LjYxNzE4N2MwIDQuMTQ0NTMxIDMuMzU5Mzc1IDcuNTAzOTA3IDcuNTAzOTA2IDcuNTAzOTA3IDQuMTQ4NDM4IDAgNy41MDM5MDctMy4zNTkzNzYgNy41MDM5MDctNy41MDM5MDd2LTExMC44ODI4MTJjMC01Ljg1MTU2MyA0Ljc2MTcxOS0xMC42MDkzNzUgMTAuNjEzMjgxLTEwLjYwOTM3NWg4LjI2NTYyNWMuMDIzNDM3IDAgLjA1MDc4MS4wMDM5MDYuMDc4MTI1LjAwMzkwNi4wMjM0MzggMCAuMDUwNzgxLS4wMDM5MDYuMDc0MjE5LS4wMDM5MDZoNTIuODI0MjE5YzUuODUxNTYyIDAgMTAuNjEzMjgxIDQuNzYxNzE4IDEwLjYxMzI4MSAxMC42MDkzNzV6bS03MS44NTU0NjktMjUuNjE3MTg4Yy0xNC4xMjUgMC0yNS42MTcxODggMTEuNDkyMTg4LTI1LjYxNzE4OCAyNS42MTcxODh2NDkuOTYwOTM3Yy0yLjY4NzUtMS4yMjY1NjItNS42MTcxODctMi4wMDM5MDYtOC42OTkyMTgtMi4yMzA0NjhsNi4xMjEwOTQtNDkuNWMxLjIwMzEyNC05LjY0ODQzOC0zLjcxODc1LTE2LjA0Mjk2OS04LjQ3NjU2My0yMi4yMzA0NjktLjUwMzkwNi0uNjU2MjUtMjkuNjcxODc1LTM1LjI4OTA2My0yOS42NzE4NzUtMzUuMjg5MDYzbDE3Ljg5NDUzMS01NC4xMDE1NjIgNDkuMjg5MDYzLTI5Ljk0NTMxM3YxMTcuNzE4NzV6bTE1Ljg0NzY1Ni0yMDUuMjM0Mzc1di00Ni4zMTY0MDZoNzkuMzg2NzE5bC0xNy4wOTc2NTYgMTUuMDU0Njg4Yy0yLjMyODEyNSAyLjA1MDc4MS0zLjY2NDA2MyA1LjAwMzkwNi0zLjY2NDA2MyA4LjEwNTQ2OCAwIDMuMTAxNTYzIDEuMzM1OTM4IDYuMDU0Njg4IDMuNjY0MDYzIDguMTA1NDY5bDE3LjA5NzY1NiAxNS4wNTQ2ODdoLTc5LjM4NjcxOXptMCAwIi8+PC9zdmc+"
+                                 width="70" height="70"/>
+                            <h3>Career in Code</h3>
+                            <p>The intelligence and introversion myths may be the most entrenched in the public
+                                consciousness, but they are the easiest to dispel. Programmers around the world have
+                                built beautiful products, created world-spanning social networks, and immensely popular
+                                games and apps.
+
+                                Computer programmers are also part of a team, which is usually part of another team,
+                                that are working together to solve problems and needs. That requires communication
+                                skills, patience, and a lot of human interaction.If you're still wondering if coding is
+                                for you, try it out in a serious way. "Give it an honest try. Doing one lesson is not an
+                                honest try. Finishing one course is not an honest try," Saron said. "You need more data,
+                                with more ups and downs, wins and losses, victories and painful frustration, to figure
+                                out if it's right for you."</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section element-animate">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7 order-md-2">
+                    <div class="scaling-image">
+                        <div class="frame"><img src="static/images/img_11.jpeg" alt="Image" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="col-md-5 pr-md-5 mb-5">
+                    <div class="block-41">
+                        <h2 class="block-41-heading mb-5">Do Code Today For Better Tomorrow</h2>
+                        <div class="block-41-text">
+                            <p>Every student deserves the chance to explore, advance, and succeed in Coding. More than
+                                65% of young people will work in jobs that don’t currently exist1. Learning computer
+                                science skills helps students thrive in a rapidly changing world.</p>
+                            <!-- <p><a href="#" class="readmore">Read More <span class="ion-android-arrow-dropright-circle"></span></a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section element-animate bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7 order-md-1">
+                    <div class="scaling-image">
+                        <div class="frame"><img src="static/images/img_22.jpg" alt="Image" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="col-md-5 pl-md-5 mb-5 order-md-2">
+                    <div class="block-41">
+                        <h2 class="block-41-heading mb-5">Perfect Code Style</h2>
+                        <div class="block-41-text">
+                            <p>Programming style, also known as code style, is a set of rules or guidelines used when
+                                writing the source code for a computer program. It is often claimed that a particular
+                                programming style will help programmers read and understand source code conforming to
+                                the style, and help to avoid introducing errors.</p><!--
+                <p><a href="#" class="readmore">Read More <span class="ion-android-arrow-dropright-circle"></span></a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section border-t">
+        <div class="container">
+            <div class="row justify-content-center mb-5 element-animate">
+                <div class="col-md-8 text-center">
+                    <h2 class=" heading mb-4">Where To Learn Coding?</h2>
+                    <p class="mb-5 lead">There are so many places to learn to code which is great and somewhat
+                        intimidating at the same time. It also really depends what language you’re trying to learn,
+                        While using the resources lest talk about below website which are always supplementing
+                        knowledge.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-6 element-animate">
+                    <a href="/codecademy" class="link-thumbnail">
+                        <h3>Zach Sims & Ryan Bubinski</h3>
+                        <span class="ion-plus icon"></span>
+                        <img src="static/images/ca.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-6 element-animate">
+                    <a href="codecademy.html" class="link-thumbnail">
+                        <h3>Andrew Ng <strong>&</strong> Daphne Koller</h3>
+                        <span class="ion-plus icon"></span>
+                        <img src="static/images/cs.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-6 element-animate">
+                    <a href="/createpost" class="link-thumbnail">
+                        <h3>Request to post your course now!</h3>
+                        <span class="ion-plus icon"></span>
+                        <img src="static/images/request.jpg" alt="Image" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- END section -->
+
+    <div class="section bg-light block-11">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center">
+                    <h2 class=" heading mb-4">Testimonial</h2>
+                </div>
+            </div>
+            <div class="nonloop-block-11 owl-carousel">
+                <div class="item">
+                    <div class="block-33 h-100">
+                        <div class="vcard d-flex mb-3">
+                            <div class="image align-self-center"><img src="static/images/mf.jpg" alt="Person here">
+                            </div>
+                            <div class="name-text align-self-center">
+                                <h2 class="heading">Martin Fowler</h2>
+                                <span class="meta">British software developer</span>
+                            </div>
+                        </div>
+
+
+                        <div class="text">
+                            <blockquote>
+                                <p>&rdquo; Any fool can write code that a computer can understand. Good programmers
+                                    write code that humans can understand. &ldquo;</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="block-33 h-100">
+                        <div class="vcard d-flex mb-3">
+                            <div class="image align-self-center"><img src="static/images/donald.jpg" alt="Person here">
+                            </div>
+                            <div class="name-text align-self-center">
+                                <h2 class="heading">Donald E. Knuth</h2>
+                                <span class="meta">American computer scientist</span>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <blockquote>
+                                <p>&rdquo; The best programs are written so that computing machines can perform them
+                                    quickly and so that human beings can understand them clearly. A programmer is
+                                    ideally an essayist who works with traditional aesthetic and literary forms as well
+                                    as mathematical concepts, to communicate the way that an algorithm works and to
+                                    convince a reader that the results will be correct. &ldquo;</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="block-33 h-100">
+                        <div class="vcard d-flex mb-3">
+                            <div class="image align-self-center"><img src="static/images/w.jpeg" alt="Person here">
+                            </div>
+                            <div class="name-text align-self-center">
+                                <h2 class="heading">Joseph Weizenbaum </h2>
+                                <span class="meta">professor at MIT</span>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <blockquote>
+                                <p>&rdquo;The computer programmer is a creator of universes for which he alone is the
+                                    lawgiver. No playwright, no stage director, no emperor, however powerful, has ever
+                                    exercised such absolute authority to arrange a stage or field of battle and to
+                                    command such unswervingly dutiful actors or troops. &ldquo;</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END .block-4 -->
+    </div>
+
+{% endblock %}
+   

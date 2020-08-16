@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- END header -->
+
+    <div class="top-shadow"></div>
+
+    <div class="inner-page">
+        <div class="slider-item"
+             style="background-image: url('{{ url_for('static', filename='images/contact.jpg') }}');">
+            <div class="container">
+                <div class="row slider-text align-items-center justify-content-center">
+                    <div class="col-lg-9 text-center col-sm-12 element-animate">
+                        <h1 class="mb-4"><span>Terms And Condition</span></h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5 order-2">
+
+                <p>Hi this is first term</p>
+                   <!-- <form name="sentMessage" id="createpost" action="/createpost" method="post"
+                          onload="disableSubmit()">
+                        {% if submit %}
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>Great!</strong> Your Message has been send Successfully!
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endif %}
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name='name' required placeholder="Enter Your Full Name"
+                                       class="form-control ">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" name='phone' required class="form-control ">
+                                <small id="Help" class="form-text text-muted">This will not shown on your
+                                    course</small>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name='email' required class="form-control ">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="ctitle"> Your Course Title</label>
+                                <input type="text" id="ctitle" name='ctitle' required
+                                       placeholder="Heading of your course"
+                                       class="form-control ">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="ctag"> Your Course Tagline</label>
+                                <input type="text" id="ctag" name='ctag' required class="form-control ">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="clink"> Your Course Link</label>
+                                <input type="text" id="clink" name='clink' placeholder=" " required
+                                       class="form-control ">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="Description">Your Course Description</label>
+                                <textarea name="cdes" id="cdes" class="form-control " name='cdes' required
+                                          cols="100" rows="20"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="cimage">Your Course Image</label>
+                                <input type="file" id="cimage" name="cimage">
+                                <small id="Help1" class="form-text text-muted">You must provide image of your
+                                    course.</small>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="suggestion">Any other suggestion?</label>
+                                <textarea name="suggestion" id="suggestion" class="form-control " name='suggestion'
+                                          cols="3" rows="2"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <body onload="disableSubmit()">
+                                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> I Agree
+                                Terms & Coditions
+                                <br><br>
+                                <input type="submit" name="sentMessage" id="submit" value="Send Request to post"
+                                       class="btn btn-primary px-3 py-3"></body>
+
+                            </div>
+                        </div>
+                    </form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END .block-4 -->
+    </div>
+
+{% endblock %}
